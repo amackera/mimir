@@ -6,11 +6,16 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "norns-sdk",
+    "discord.py>=2.3",
+    "PyGithub>=2.1",
+    "google-api-python-client>=2.100",
+    "google-auth-httplib2>=0.2",
+    "google-auth-oauthlib>=1.2",
 ]
 
 [project.scripts]
 mimir-worker = "mimir.worker:main"
-mimir-client = "mimir.client:main"
+mimir-discord = "mimir.discord_bot:main"
 
 [build-system]
 requires = ["hatchling"]
